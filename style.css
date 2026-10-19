@@ -237,6 +237,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .footer { background: var(--dark); color: var(--cream); text-align: center; padding: 40px 24px; font-size: .95rem; }
 .footer p { margin: 0 auto; }
+.footer .ico { margin-top: 4px; font-size: .9rem; }
 .footer .credit { margin-top: 8px; font-size: .85rem; color: #cbbfb0; }
 .footer img { margin: 0 auto 16px; width: 140px; }
 
