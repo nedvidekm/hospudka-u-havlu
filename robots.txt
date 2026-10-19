@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nedvidekm.github.io/hospudka-u-havlu/sitemap.xml
+Sitemap: https://hospudkauhavlu.cz/sitemap.xml

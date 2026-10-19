@@ -1,7 +1,7 @@
 # Hospůdka u Havlů
 
 Jednoduchý statický web (HTML + CSS), hostovaný přes GitHub Pages z účtu `nedvidekm`:
-https://nedvidekm.github.io/hospudka-u-havlu/
+https://hospudkauhavlu.cz/
 
 - `index.html` – obsah stránky (místa k doplnění jsou označená komentářem `DOPLNIT`)
 - `style.css` – vzhled
