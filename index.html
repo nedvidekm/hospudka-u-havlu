@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospůdka u Havlů</title>
+  <meta name="description" content="Hospůdka u Havlů – poctivé pivo, domácí kuchyně a dobrá společnost.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="#" class="logo">U Havlů</a>
+      <ul>
+        <li><a href="#o-nas">O nás</a></li>
+        <li><a href="#menu">Nabídka</a></li>
+        <li><a href="#oteviraci-doba">Otevírací doba</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <p class="eyebrow">Vítejte v</p>
+      <h1>Hospůdce u Havlů</h1>
+      <p class="lead">Poctivě natočené pivo, domácí kuchyně a místo, kde se rádi potkáváte.</p>
+      <a href="#oteviraci-doba" class="btn">Kdy máme otevřeno</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="o-nas" class="section">
+      <h2>O nás</h2>
+      <!-- DOPLNIT: krátký příběh hospůdky (kdo ji vede, od kdy, čím je zvláštní) -->
+      <p>Rodinná hospůdka, kde se čepuje s láskou a vaří jako doma. Přijďte na pivo, na oběd nebo jen posedět s přáteli.</p>
+    </section>
+
+    <section id="menu" class="section alt">
+      <h2>Nabídka</h2>
+      <!-- DOPLNIT: skutečné pivo na čepu a jídla s cenami -->
+      <div class="cards">
+        <div class="card">
+          <h3>Na čepu</h3>
+          <ul class="price-list">
+            <li><span>Pivo 10°</span><span>— Kč</span></li>
+            <li><span>Pivo 12°</span><span>— Kč</span></li>
+            <li><span>Nealko pivo</span><span>— Kč</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Kuchyně</h3>
+          <ul class="price-list">
+            <li><span>Polévka dne</span><span>— Kč</span></li>
+            <li><span>Smažený sýr, hranolky</span><span>— Kč</span></li>
+            <li><span>Utopenci</span><span>— Kč</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="oteviraci-doba" class="section">
+      <h2>Otevírací doba</h2>
+      <!-- DOPLNIT: skutečná otevírací doba -->
+      <table class="hours">
+        <tr><th>Pondělí</th><td>—</td></tr>
+        <tr><th>Úterý</th><td>—</td></tr>
+        <tr><th>Středa</th><td>—</td></tr>
+        <tr><th>Čtvrtek</th><td>—</td></tr>
+        <tr><th>Pátek</th><td>—</td></tr>
+        <tr><th>Sobota</th><td>—</td></tr>
+        <tr><th>Neděle</th><td>—</td></tr>
+      </table>
+    </section>
+
+    <section id="kontakt" class="section alt">
+      <h2>Kontakt</h2>
+      <!-- DOPLNIT: adresa, telefon, e-mail, Facebook/Instagram, odkaz na mapu -->
+      <div class="contact">
+        <p><strong>Adresa:</strong> doplnit</p>
+        <p><strong>Telefon:</strong> <a href="tel:+420000000000">+420 000 000 000</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:info@example.cz">doplnit</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="rok"></span> Hospůdka u Havlů</p>
+  </footer>
+  <script>document.getElementById('rok').textContent = new Date().getFullYear();</script>
+</body>
+</html>
