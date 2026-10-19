@@ -194,6 +194,25 @@
     const onScroll = () => toTop.classList.toggle('visible', window.scrollY > 600);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+
+    // Zvětšení fotky z galerie: klik otevře, další klik (nebo Esc) zavře
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = '<img alt=""><p></p>';
+    document.body.appendChild(lightbox);
+    const lbImg = lightbox.querySelector('img');
+    const lbText = lightbox.querySelector('p');
+    const closeLightbox = () => lightbox.classList.remove('open');
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lbText.textContent = img.alt;
+        lightbox.classList.add('open');
+      });
+    });
+    lightbox.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   </script>
 </body>
 </html>

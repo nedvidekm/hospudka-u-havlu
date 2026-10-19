@@ -99,6 +99,29 @@ img { max-width: 100%; display: block; }
 .gallery { columns: 4 220px; column-gap: 14px; }
 .gallery img { width: 100%; margin-bottom: 14px; border-radius: 10px; break-inside: avoid; }
 
+.gallery img { cursor: zoom-in; transition: transform .2s; }
+.gallery img:hover { transform: scale(1.02); }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(15, 10, 6, .92);
+  cursor: zoom-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s;
+}
+.lightbox.open { opacity: 1; visibility: visible; }
+.lightbox img { max-width: 100%; max-height: calc(100vh - 80px); border-radius: 10px; object-fit: contain; }
+.lightbox p { margin: 0; color: var(--cream); font-size: .95rem; text-align: center; }
+
 /* Otevírací doba */
 .hours { border-collapse: collapse; width: 100%; max-width: 440px; font-size: 1.1rem; }
 .hours th, .hours td { padding: 10px 0; border-bottom: 1px solid #dccbb0; }
