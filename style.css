@@ -49,7 +49,8 @@ img { max-width: 100%; display: block; }
 .nav ul { display: flex; flex-wrap: wrap; gap: 4px 22px; list-style: none; margin: 0; padding: 0; }
 .nav a { color: var(--cream); text-decoration: none; font-size: .95rem; }
 .nav a:hover { color: var(--tan); }
-.logo { font-size: 1.6rem; font-weight: 700; }
+.logo { font-size: 1.6rem; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+.logo img { width: 46px; height: 46px; border-radius: 8px; }
 
 .hero-text { margin: auto; padding: 40px 24px 80px; text-align: center; max-width: 760px; }
 .eyebrow { text-transform: uppercase; letter-spacing: .25em; color: var(--tan); margin: 0; font-weight: 600; }
