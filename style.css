@@ -115,6 +115,38 @@ img { max-width: 100%; display: block; }
 .footer { background: var(--dark); color: var(--cream); text-align: center; padding: 36px 24px; font-size: .95rem; }
 .footer img { margin: 0 auto 12px; border-radius: 8px; }
 
+/* Odkaz nahoru na konci sekcí */
+.section-top { display: table; margin: 32px 0 0 auto; padding: 8px 20px; border: 2px solid var(--copper); border-radius: 999px; color: var(--copper); font-weight: 600; text-decoration: none; font-size: .95rem; }
+.section-top:hover { background: var(--copper); color: #fff; }
+.section.alt > .section-top { margin-right: max(0px, calc((100% - 1102px) / 2)); }
+.about > .section-top { grid-column: 1 / -1; margin-top: 0; }
+
+/* Tlačítko zpět nahoru */
+.to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--copper);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(29, 22, 17, .3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .25s, transform .25s, visibility .25s;
+  z-index: 10;
+}
+.to-top.visible { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: #a85e2c; }
+
 @media (max-width: 800px) {
   .section { padding: 60px 16px; }
   .two-col, .about { grid-template-columns: 1fr; gap: 32px; }

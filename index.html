@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="nahoru">
     <nav class="nav">
-      <a href="#" class="logo">U Havlů</a>
+      <a href="#nahoru" class="logo">U Havlů</a>
       <ul>
         <li><a href="#o-nas">O nás</a></li>
         <li><a href="#jidelak">Jídelák</a></li>
@@ -50,6 +50,7 @@
         </div>
       </div>
       <img class="about-photo" src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé Hospůdky u Havlů" loading="lazy">
+      <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
 
     <section id="jidelak" class="section alt">
@@ -93,6 +94,7 @@
           </div>
         </div>
       </div>
+      <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
 
     <section id="galerie" class="section">
@@ -136,6 +138,7 @@
         <img src="img/web/05-obsluha-frape.jpg" alt="Obsluha s frapé na zahrádce" loading="lazy">
         <img src="img/web/21-obsluha-dezert.jpg" alt="Náš tým s dezertem" loading="lazy">
       </div>
+      <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
 
     <section id="oteviraci-doba" class="section alt">
@@ -152,10 +155,11 @@
             <tr><th>Sobota</th><td>11:00 – 24:00</td></tr>
             <tr><th>Neděle</th><td>11:00 – 20:00</td></tr>
           </table>
-          <p class="note">Změny a svátky hlásíme na Facebooku.</p>
+          <p class="note">Změny a svátky hlásíme na <a href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebooku</a>.</p>
         </div>
         <img src="img/web/10-zahradka-den.jpg" alt="Letní zahrádka" loading="lazy" class="rounded">
       </div>
+      <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
 
     <section id="kontakt" class="section">
@@ -174,6 +178,7 @@
         <iframe class="map" title="Mapa – Plzeňská 334, Toužim" loading="lazy"
           src="https://maps.google.com/maps?q=Plze%C5%88sk%C3%A1%20334%2C%20364%2001%20To%C5%BEim&z=16&output=embed"></iframe>
       </div>
+      <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
   </main>
 
@@ -181,6 +186,13 @@
     <img src="img/web/04-logo.jpg" alt="Logo Hospůdka u Havlů Sokolovna Toužim" width="90" height="90">
     <p>&copy; <span id="rok"></span> Hospůdka u Havlů – Sokolovna Toužim</p>
   </footer>
-  <script>document.getElementById('rok').textContent = new Date().getFullYear();</script>
+  <a href="#nahoru" class="to-top" aria-label="Zpět nahoru" title="Zpět nahoru">↑</a>
+  <script>
+    document.getElementById('rok').textContent = new Date().getFullYear();
+    const toTop = document.querySelector('.to-top');
+    const onScroll = () => toTop.classList.toggle('visible', window.scrollY > 600);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
 </body>
 </html>
