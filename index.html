@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hospůdka u Havlů</title>
-  <meta name="description" content="Hospůdka u Havlů – poctivé pivo, domácí kuchyně a dobrá společnost.">
+  <title>Hospůdka u Havlů – Sokolovna Toužim</title>
+  <meta name="description" content="Hospůdka u Havlů v Sokolovně v Toužimi. Poctivá česká kuchyně, Pilsner Urquell z tanku, letní zahrádka a dětské hřiště.">
+  <meta property="og:title" content="Hospůdka u Havlů – Sokolovna Toužim">
+  <meta property="og:description" content="Tady se najíte a napijete tak, jak se má – poctivě a s chutí.">
+  <meta property="og:image" content="img/web/09-interier.jpg">
+  <link rel="icon" href="img/web/04-logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,76 +20,167 @@
       <a href="#" class="logo">U Havlů</a>
       <ul>
         <li><a href="#o-nas">O nás</a></li>
-        <li><a href="#menu">Nabídka</a></li>
-        <li><a href="#oteviraci-doba">Otevírací doba</a></li>
+        <li><a href="#jidelak">Jídelák</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#oteviraci-doba">Otevřeno</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
     <div class="hero-text">
-      <p class="eyebrow">Vítejte v</p>
-      <h1>Hospůdce u Havlů</h1>
-      <p class="lead">Poctivě natočené pivo, domácí kuchyně a místo, kde se rádi potkáváte.</p>
-      <a href="#oteviraci-doba" class="btn">Kdy máme otevřeno</a>
+      <p class="eyebrow">Sokolovna Toužim</p>
+      <h1>Hospůdka u Havlů</h1>
+      <p class="lead">Tady se najíte a napijete tak, jak se má – poctivě a s chutí.</p>
+      <div class="hero-buttons">
+        <a href="#jidelak" class="btn">Co vaříme</a>
+        <a href="#oteviraci-doba" class="btn btn-ghost">Kdy máme otevřeno</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section id="o-nas" class="section">
-      <h2>O nás</h2>
-      <!-- DOPLNIT: krátký příběh hospůdky (kdo ji vede, od kdy, čím je zvláštní) -->
-      <p>Rodinná hospůdka, kde se čepuje s láskou a vaří jako doma. Přijďte na pivo, na oběd nebo jen posedět s přáteli.</p>
+    <section id="o-nas" class="section about">
+      <div class="about-text">
+        <h2>O nás</h2>
+        <p>Jsme malá rodinná hospůdka s letní zahrádkou, kde se můžete v klidu zastavit na dobré pivo a poctivé jídlo. Čepujeme skvěle ošetřený Pilsner Urquell, Kozla 11°, 10° i černého, dále pomelo-grep, domácí limonády a spoustu dalšího.</p>
+        <p>K jídlu vaříme klasiku české kuchyně, kterou máme rádi i my sami. O víkendech ji obměňujeme podle sezóny nebo chuti: někdy jsou to hody, často zahraniční kuchyně, jindy grilování na zahrádce při pěkném počasí. Prostě co nás zrovna napadne. Hlavně ať je všechno čerstvé, jednoduché, poctivé a chutné.</p>
+        <p>Děti se vyřádí na hřišti vedle nás, auto zaparkujete zdarma hned za budovou a o vaši pohodu se postará šéfová na place se svým mužem v kuchyni i jejich usměvavým týmem. Rádi vás u nás uvidíme 🧡🍻</p>
+        <div class="badges">
+          <img src="img/web/08-restaurant-guru-2025.jpg" alt="Restaurant Guru – doporučeno 2025" loading="lazy">
+          <!-- DOPLNIT: hodnocení z Google (číslo a počet recenzí) -->
+          <a class="btn btn-ghost-dark" href="https://www.google.com/maps/search/?api=1&query=Hosp%C5%AFdka%20u%20Havl%C5%AF%20Sokolovna%20To%C5%BEim" target="_blank" rel="noopener">Naše hodnocení na Google</a>
+        </div>
+      </div>
+      <img class="about-photo" src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé Hospůdky u Havlů" loading="lazy">
     </section>
 
-    <section id="menu" class="section alt">
-      <h2>Nabídka</h2>
-      <!-- DOPLNIT: skutečné pivo na čepu a jídla s cenami -->
-      <div class="cards">
-        <div class="card">
-          <h3>Na čepu</h3>
-          <ul class="price-list">
-            <li><span>Pivo 10°</span><span>— Kč</span></li>
-            <li><span>Pivo 12°</span><span>— Kč</span></li>
-            <li><span>Nealko pivo</span><span>— Kč</span></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Kuchyně</h3>
-          <ul class="price-list">
-            <li><span>Polévka dne</span><span>— Kč</span></li>
-            <li><span>Smažený sýr, hranolky</span><span>— Kč</span></li>
-            <li><span>Utopenci</span><span>— Kč</span></li>
-          </ul>
+    <section id="jidelak" class="section alt">
+      <div class="inner">
+        <h2>Stálý jídelák</h2>
+        <p class="note">Každý den navíc polévka a denní nabídka. Aktuality najdete na našem <a href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebooku</a>.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>Předkrmy</h3>
+            <ul class="price-list">
+              <li><span>Polévka dle denní nabídky</span><span>dle nabídky</span></li>
+              <li><span>Nakládaný Camembert</span><span>95 Kč</span></li>
+              <li><span>Pikantní utopenci</span><span>95 Kč</span></li>
+              <li><span>Smažené cibulové kroužky</span><span>80 Kč</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Hlavní jídla</h3>
+            <ul class="price-list">
+              <li><span>Svíčková na smetaně</span><span>210 Kč</span></li>
+              <li><span>Pikantní hovězí guláš</span><span>210 Kč</span></li>
+              <li><span>Vepřový řízek</span><span>130 Kč</span></li>
+              <li><span>Smažený sýr z Goudy</span><span>135 Kč</span></li>
+              <li><span>Smažený Camembert</span><span>140 Kč</span></li>
+              <li><span>Trhané vepřové maso zapečené s chilli Cheddarem</span><span>210 Kč</span></li>
+            </ul>
+            <h4>Pro děti</h4>
+            <ul class="price-list">
+              <li><span>Rybí prsty s hranolky</span><span>140 Kč</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Přílohy</h3>
+            <ul class="price-list">
+              <li><span>Hranolky</span><span>55 Kč</span></li>
+              <li><span>Vařené brambory</span><span>55 Kč</span></li>
+              <li><span>Krokety</span><span>60 Kč</span></li>
+              <li><span>Bramboráčky 4 ks</span><span>60 Kč</span></li>
+              <li><span>Coleslaw salát</span><span>70 Kč</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="oteviraci-doba" class="section">
-      <h2>Otevírací doba</h2>
-      <!-- DOPLNIT: skutečná otevírací doba -->
-      <table class="hours">
-        <tr><th>Pondělí</th><td>—</td></tr>
-        <tr><th>Úterý</th><td>—</td></tr>
-        <tr><th>Středa</th><td>—</td></tr>
-        <tr><th>Čtvrtek</th><td>—</td></tr>
-        <tr><th>Pátek</th><td>—</td></tr>
-        <tr><th>Sobota</th><td>—</td></tr>
-        <tr><th>Neděle</th><td>—</td></tr>
-      </table>
+    <section id="galerie" class="section">
+      <h2>Galerie</h2>
+      <h3 class="gallery-title">Z naší kuchyně</h3>
+      <div class="gallery">
+        <img src="img/web/27-gulas-knedlik.jpg" alt="Hovězí guláš s houskovým knedlíkem" loading="lazy">
+        <img src="img/web/18-tatarak.jpg" alt="Tatarák s topinkami" loading="lazy">
+        <img src="img/web/14-rizek-bramborovy-salat.jpg" alt="Řízek s bramborovým salátem" loading="lazy">
+        <img src="img/web/28-trhane-maso-cheddar.jpg" alt="Trhané vepřové s chilli Cheddarem" loading="lazy">
+        <img src="img/web/17-kulajda.jpg" alt="Kulajda se ztraceným vejcem" loading="lazy">
+        <img src="img/web/12-bucek-spenat-knedlik.jpg" alt="Bůček se špenátem a bramborovým knedlíkem" loading="lazy">
+        <img src="img/web/13-ramen.jpg" alt="Ramen" loading="lazy">
+        <img src="img/web/22-bucek-zeli-brambory.jpg" alt="Bůček se zelím a opékanými brambory" loading="lazy">
+        <img src="img/web/24-sekana-kase.jpg" alt="Sekaná s bramborovou kaší" loading="lazy">
+        <img src="img/web/25-thajska-polevka.jpg" alt="Thajská polévka" loading="lazy">
+        <img src="img/web/26-kremova-polevka.jpg" alt="Krémová polévka s krutony" loading="lazy">
+        <img src="img/web/06-dezert-veternicky.jpg" alt="Dezert s jahodami a šlehačkou" loading="lazy">
+      </div>
+
+      <h3 class="gallery-title">Na čepu i jinak</h3>
+      <div class="gallery">
+        <img src="img/web/03-pivo-kvetiny.jpg" alt="Pilsner Urquell na zahrádce" loading="lazy">
+        <img src="img/web/19-rezane-pivo.jpg" alt="Řezané pivo" loading="lazy">
+        <img src="img/web/23-aperol-spritz.jpg" alt="Aperol Spritz" loading="lazy">
+        <img src="img/web/15-svarak-snehulak.jpg" alt="Svařák v zimě" loading="lazy">
+      </div>
+
+      <h3 class="gallery-title">Hospůdka a zahrádka</h3>
+      <div class="gallery">
+        <img src="img/web/09-interier.jpg" alt="Interiér hospůdky" loading="lazy">
+        <img src="img/web/10-zahradka-den.jpg" alt="Letní zahrádka" loading="lazy">
+        <img src="img/web/11-zahradka-noc.jpg" alt="Zahrádka večer" loading="lazy">
+        <img src="img/web/01-cedule-sklenka.jpg" alt="Cedule Hospůdka u Havlů" loading="lazy">
+      </div>
+
+      <h3 class="gallery-title">To jsme my</h3>
+      <div class="gallery">
+        <img src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé o Vánocích" loading="lazy">
+        <img src="img/web/16-kuchar-raut.jpg" alt="Kuchař u připraveného rautu" loading="lazy">
+        <img src="img/web/05-obsluha-frape.jpg" alt="Obsluha s frapé na zahrádce" loading="lazy">
+        <img src="img/web/21-obsluha-dezert.jpg" alt="Náš tým s dezertem" loading="lazy">
+      </div>
     </section>
 
-    <section id="kontakt" class="section alt">
+    <section id="oteviraci-doba" class="section alt">
+      <div class="inner two-col">
+        <div>
+          <h2>Otevírací doba</h2>
+          <!-- OVĚŘIT s Tomášem: převzato z firmy.cz 19. 10. 2026 -->
+          <table class="hours">
+            <tr><th>Pondělí</th><td>zavřeno</td></tr>
+            <tr><th>Úterý</th><td>zavřeno</td></tr>
+            <tr><th>Středa</th><td>14:30 – 22:00</td></tr>
+            <tr><th>Čtvrtek</th><td>14:30 – 22:00</td></tr>
+            <tr><th>Pátek</th><td>14:30 – 24:00</td></tr>
+            <tr><th>Sobota</th><td>11:00 – 24:00</td></tr>
+            <tr><th>Neděle</th><td>11:00 – 20:00</td></tr>
+          </table>
+          <p class="note">Změny a svátky hlásíme na Facebooku.</p>
+        </div>
+        <img src="img/web/10-zahradka-den.jpg" alt="Letní zahrádka" loading="lazy" class="rounded">
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
       <h2>Kontakt</h2>
-      <!-- DOPLNIT: adresa, telefon, e-mail, Facebook/Instagram, odkaz na mapu -->
-      <div class="contact">
-        <p><strong>Adresa:</strong> doplnit</p>
-        <p><strong>Telefon:</strong> <a href="tel:+420000000000">+420 000 000 000</a></p>
-        <p><strong>E-mail:</strong> <a href="mailto:info@example.cz">doplnit</a></p>
+      <div class="two-col">
+        <div class="contact">
+          <p><strong>Hospůdka u Havlů – Sokolovna Toužim</strong><br>Plzeňská 334, 364 01 Toužim</p>
+          <p><strong>Telefon do hospody:</strong> <a href="tel:+420604782468">+420 604 782 468</a></p>
+          <p><strong>E-mail:</strong> <a href="mailto:tomiomusic@centrum.cz">tomiomusic@centrum.cz</a></p>
+          <p>Parkování hned za budovou.</p>
+          <p class="contact-buttons">
+            <a class="btn" href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebook</a>
+            <a class="btn btn-ghost-dark" href="https://mapy.com/?q=Plze%C5%88sk%C3%A1%20334%2C%20To%C5%BEim" target="_blank" rel="noopener">Navigovat</a>
+          </p>
+        </div>
+        <iframe class="map" title="Mapa – Plzeňská 334, Toužim" loading="lazy"
+          src="https://maps.google.com/maps?q=Plze%C5%88sk%C3%A1%20334%2C%20364%2001%20To%C5%BEim&z=16&output=embed"></iframe>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; <span id="rok"></span> Hospůdka u Havlů</p>
+    <img src="img/web/04-logo.jpg" alt="Logo Hospůdka u Havlů Sokolovna Toužim" width="90" height="90">
+    <p>&copy; <span id="rok"></span> Hospůdka u Havlů – Sokolovna Toužim</p>
   </footer>
   <script>document.getElementById('rok').textContent = new Date().getFullYear();</script>
 </body>
