@@ -4,40 +4,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hospůdka u Havlů – Sokolovna Toužim</title>
-  <meta name="description" content="Hospůdka u Havlů v Sokolovně v Toužimi. Poctivá česká kuchyně, Pilsner Urquell z tanku, letní zahrádka a dětské hřiště.">
+  <meta name="description" content="Rodinná hospůdka v Sokolovně v Toužimi. Poctivá česká kuchyně, Pilsner Urquell a Kozel, letní zahrádka, dětské hřiště a parkování zdarma.">
+  <meta name="theme-color" content="#1d1611">
   <meta property="og:title" content="Hospůdka u Havlů – Sokolovna Toužim">
   <meta property="og:description" content="Tady se najíte a napijete tak, jak se má – poctivě a s chutí.">
   <meta property="og:image" content="img/web/09-interier.jpg">
   <link rel="icon" href="img/web/04-logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero" id="nahoru">
-    <nav class="nav">
-      <ul>
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="topbar" id="topbar">
+    <nav class="nav" aria-label="Hlavní menu">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
         <li><a href="#o-nas">O nás</a></li>
-        <li><a href="#jidelak">Jídelní lístek</a></li>
+        <li><a href="#jidelni-listek">Jídelní lístek</a></li>
         <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#oteviraci-doba">Otevřeno</a></li>
+        <li><a href="#oteviraci-doba">Otevírací doba</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
-    <div class="hero-text">
-      <img class="hero-icon" src="img/web/logo-ikona.png" alt="" width="234" height="60">
-      <p class="eyebrow">Sokolovna Toužim</p>
-      <h1>Hospůdka u Havlů</h1>
-      <p class="lead">Tady se najíte a napijete tak, jak se má – poctivě a s chutí.</p>
-      <div class="hero-buttons">
-        <a href="#jidelak" class="btn">Co vaříme</a>
-        <a href="#oteviraci-doba" class="btn btn-ghost">Kdy máme otevřeno</a>
-      </div>
-    </div>
   </header>
 
-  <main>
+  <div class="hero" id="nahoru">
+    <div class="hero-text">
+      <img width="468" height="119" class="hero-icon" src="img/web/logo-ikona.png" alt="">
+      <p class="eyebrow">Sokolovna Toužim</p>
+      <h1>Hospůdka u&nbsp;Havlů</h1>
+      <p class="lead">Tady se najíte a napijete tak, jak se má – poctivě a s chutí.</p>
+      <div class="hero-buttons">
+        <a href="#jidelni-listek" class="btn">Jídelní lístek</a>
+        <a href="#oteviraci-doba" class="btn btn-ghost">Otevírací doba</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="obsah">
+    <ul class="quickinfo" aria-label="Rychlé informace">
+      <li>
+        <span class="qi-label">Dnes</span>
+        <a href="#oteviraci-doba" id="dnes">Otevírací doba</a>
+      </li>
+      <li>
+        <span class="qi-label">Adresa</span>
+        <a href="https://mapy.com/?q=Plze%C5%88sk%C3%A1%20334%2C%20To%C5%BEim" target="_blank" rel="noopener">Plzeňská 334, Toužim</a>
+      </li>
+      <li>
+        <span class="qi-label">Telefon</span>
+        <a href="tel:+420604782468">604 782 468</a>
+      </li>
+    </ul>
+
     <section id="o-nas" class="section about">
       <div class="about-text">
         <h2>O nás</h2>
@@ -45,15 +67,15 @@
         <p>K jídlu vaříme klasiku české kuchyně, kterou máme rádi i my sami. O víkendech ji obměňujeme podle sezóny nebo chuti: někdy jsou to hody, často zahraniční kuchyně, jindy grilování na zahrádce při pěkném počasí. Prostě co nás zrovna napadne. Hlavně ať je všechno čerstvé, jednoduché, poctivé a chutné.</p>
         <p>Děti se vyřádí na hřišti vedle nás, auto zaparkujete zdarma hned za budovou a o vaši pohodu se postará šéfová na place se svým mužem v kuchyni i jejich usměvavým týmem. Rádi vás u nás uvidíme 🧡🍻</p>
         <div class="badges">
-          <img src="img/web/08-restaurant-guru-2025.jpg" alt="Restaurant Guru – doporučeno 2025" loading="lazy">
-          <a class="btn btn-ghost-dark" href="https://www.google.com/maps/search/?api=1&query=Hosp%C5%AFdka%20u%20Havl%C5%AF%20Sokolovna%20To%C5%BEim" target="_blank" rel="noopener">Přečtěte si recenze na Google</a>
+          <img width="1400" height="1163" src="img/web/08-restaurant-guru-2025.jpg" alt="Ocenění Restaurant Guru – doporučeno 2025" loading="lazy">
+          <a class="btn btn-ghost-dark" href="https://www.google.com/maps/search/?api=1&query=Hosp%C5%AFdka%20u%20Havl%C5%AF%20Sokolovna%20To%C5%BEim" target="_blank" rel="noopener">Recenze na Google</a>
         </div>
       </div>
-      <img class="about-photo" src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé Hospůdky u Havlů" loading="lazy">
+      <img width="1400" height="1050" class="about-photo" src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé Hospůdky u Havlů" loading="lazy">
       <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
 
-    <section id="jidelak" class="section alt">
+    <section id="jidelni-listek" class="section alt">
       <div class="inner">
         <h2>Stálý jídelní lístek</h2>
         <p class="note">Od pátku do neděle navíc vaříme speciální víkendovou nabídku. Co zrovna bude, najdete na našem <a href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebooku</a>.</p>
@@ -99,44 +121,45 @@
 
     <section id="galerie" class="section">
       <h2>Galerie</h2>
+      <p class="note">Klepnutím fotku zvětšíte.</p>
       <h3 class="gallery-title">Z naší kuchyně</h3>
       <div class="gallery">
-        <img src="img/web/27-gulas-knedlik.jpg" alt="Hovězí guláš s houskovým knedlíkem" loading="lazy">
-        <img src="img/web/18-tatarak.jpg" alt="Tatarák s topinkami" loading="lazy">
-        <img src="img/web/14-rizek-bramborovy-salat.jpg" alt="Řízek s bramborovým salátem" loading="lazy">
-        <img src="img/web/28-trhane-maso-cheddar.jpg" alt="Trhané vepřové s chilli Cheddarem" loading="lazy">
-        <img src="img/web/17-kulajda.jpg" alt="Kulajda se ztraceným vejcem" loading="lazy">
-        <img src="img/web/12-bucek-spenat-knedlik.jpg" alt="Bůček se špenátem a bramborovým knedlíkem" loading="lazy">
-        <img src="img/web/13-ramen.jpg" alt="Ramen" loading="lazy">
-        <img src="img/web/22-bucek-zeli-brambory.jpg" alt="Bůček se zelím a opékanými brambory" loading="lazy">
-        <img src="img/web/24-sekana-kase.jpg" alt="Sekaná s bramborovou kaší" loading="lazy">
-        <img src="img/web/25-thajska-polevka.jpg" alt="Thajská polévka" loading="lazy">
-        <img src="img/web/26-kremova-polevka.jpg" alt="Krémová polévka s krutony" loading="lazy">
-        <img src="img/web/06-dezert-veternicky.jpg" alt="Dezert s jahodami a šlehačkou" loading="lazy">
+        <img width="701" height="664" src="img/web/27-gulas-knedlik.jpg" alt="Hovězí guláš s houskovým knedlíkem" loading="lazy">
+        <img width="1050" height="1400" src="img/web/18-tatarak.jpg" alt="Tatarák s topinkami" loading="lazy">
+        <img width="1400" height="1052" src="img/web/14-rizek-bramborovy-salat.jpg" alt="Řízek s bramborovým salátem" loading="lazy">
+        <img width="1048" height="1125" src="img/web/28-trhane-maso-cheddar.jpg" alt="Trhané vepřové s chilli Cheddarem" loading="lazy">
+        <img width="788" height="1400" src="img/web/17-kulajda.jpg" alt="Kulajda se ztraceným vejcem" loading="lazy">
+        <img width="1400" height="1050" src="img/web/12-bucek-spenat-knedlik.jpg" alt="Bůček se špenátem a bramborovým knedlíkem" loading="lazy">
+        <img width="1400" height="1050" src="img/web/13-ramen.jpg" alt="Ramen" loading="lazy">
+        <img width="788" height="1400" src="img/web/22-bucek-zeli-brambory.jpg" alt="Bůček se zelím a opékanými brambory" loading="lazy">
+        <img width="960" height="1400" src="img/web/24-sekana-kase.jpg" alt="Sekaná s bramborovou kaší" loading="lazy">
+        <img width="788" height="1400" src="img/web/25-thajska-polevka.jpg" alt="Thajská polévka" loading="lazy">
+        <img width="1400" height="788" src="img/web/26-kremova-polevka.jpg" alt="Krémová polévka s krutony" loading="lazy">
+        <img width="1400" height="1050" src="img/web/06-dezert-veternicky.jpg" alt="Dezert s jahodami a šlehačkou" loading="lazy">
       </div>
 
       <h3 class="gallery-title">Na čepu i jinak</h3>
       <div class="gallery">
-        <img src="img/web/03-pivo-kvetiny.jpg" alt="Pilsner Urquell na zahrádce" loading="lazy">
-        <img src="img/web/19-rezane-pivo.jpg" alt="Řezané pivo" loading="lazy">
-        <img src="img/web/23-aperol-spritz.jpg" alt="Aperol Spritz" loading="lazy">
-        <img src="img/web/15-svarak-snehulak.jpg" alt="Svařák v zimě" loading="lazy">
+        <img width="1080" height="800" src="img/web/03-pivo-kvetiny.jpg" alt="Pilsner Urquell na zahrádce" loading="lazy">
+        <img width="970" height="1400" src="img/web/19-rezane-pivo.jpg" alt="Řezané pivo" loading="lazy">
+        <img width="810" height="1400" src="img/web/23-aperol-spritz.jpg" alt="Aperol Spritz" loading="lazy">
+        <img width="945" height="1167" src="img/web/15-svarak-snehulak.jpg" alt="Svařák v zimě" loading="lazy">
       </div>
 
       <h3 class="gallery-title">Hospůdka a zahrádka</h3>
       <div class="gallery">
-        <img src="img/web/09-interier.jpg" alt="Interiér hospůdky" loading="lazy">
-        <img src="img/web/10-zahradka-den.jpg" alt="Letní zahrádka" loading="lazy">
-        <img src="img/web/11-zahradka-noc.jpg" alt="Zahrádka večer" loading="lazy">
-        <img src="img/web/01-cedule-sklenka.jpg" alt="Cedule Hospůdka u Havlů" loading="lazy">
+        <img width="1400" height="1050" src="img/web/09-interier.jpg" alt="Interiér hospůdky" loading="lazy">
+        <img width="1050" height="1400" src="img/web/10-zahradka-den.jpg" alt="Letní zahrádka" loading="lazy">
+        <img width="1400" height="1050" src="img/web/11-zahradka-noc.jpg" alt="Zahrádka večer" loading="lazy">
+        <img width="1389" height="1400" src="img/web/01-cedule-sklenka.jpg" alt="Cedule Hospůdka u Havlů" loading="lazy">
       </div>
 
       <h3 class="gallery-title">To jsme my</h3>
       <div class="gallery">
-        <img src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé o Vánocích" loading="lazy">
-        <img src="img/web/16-kuchar-raut.jpg" alt="Kuchař u připraveného rautu" loading="lazy">
-        <img src="img/web/05-obsluha-frape.jpg" alt="Obsluha s frapé na zahrádce" loading="lazy">
-        <img src="img/web/21-obsluha-dezert.jpg" alt="Náš tým s dezertem" loading="lazy">
+        <img width="1400" height="1050" src="img/web/20-kuchar-obsluha-vanoce.jpg" alt="Majitelé o Vánocích" loading="lazy">
+        <img width="1400" height="1050" src="img/web/16-kuchar-raut.jpg" alt="Kuchař u připraveného rautu" loading="lazy">
+        <img width="788" height="1400" src="img/web/05-obsluha-frape.jpg" alt="Obsluha s frapé na zahrádce" loading="lazy">
+        <img width="1400" height="999" src="img/web/21-obsluha-dezert.jpg" alt="Náš tým s dezertem" loading="lazy">
       </div>
       <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
@@ -145,19 +168,20 @@
       <div class="inner two-col">
         <div>
           <h2>Otevírací doba</h2>
-          <!-- potvrzeno podle Facebooku 19. 10. 2026 -->
+          <!-- potvrzeno podle Facebooku 19. 10. 2026; při změně upravit i HODINY ve skriptu dole -->
           <table class="hours">
-            <tr><th>Pondělí</th><td>zavřeno</td></tr>
-            <tr><th>Úterý</th><td>zavřeno</td></tr>
-            <tr><th>Středa</th><td>14:30 – 22:00</td></tr>
-            <tr><th>Čtvrtek</th><td>14:30 – 22:00</td></tr>
-            <tr><th>Pátek</th><td>14:30 – 24:00</td></tr>
-            <tr><th>Sobota</th><td>11:00 – 24:00</td></tr>
-            <tr><th>Neděle</th><td>11:00 – 20:00</td></tr>
+            <caption class="visually-hidden">Otevírací doba podle dnů</caption>
+            <tr data-den="1"><th scope="row">Pondělí</th><td>zavřeno</td></tr>
+            <tr data-den="2"><th scope="row">Úterý</th><td>zavřeno</td></tr>
+            <tr data-den="3"><th scope="row">Středa</th><td>14:30 – 22:00</td></tr>
+            <tr data-den="4"><th scope="row">Čtvrtek</th><td>14:30 – 22:00</td></tr>
+            <tr data-den="5"><th scope="row">Pátek</th><td>14:30 – 24:00</td></tr>
+            <tr data-den="6"><th scope="row">Sobota</th><td>11:00 – 24:00</td></tr>
+            <tr data-den="0"><th scope="row">Neděle</th><td>11:00 – 20:00</td></tr>
           </table>
           <p class="note">Změny a svátky hlásíme na <a href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebooku</a>.</p>
         </div>
-        <img src="img/web/10-zahradka-den.jpg" alt="Letní zahrádka" loading="lazy" class="rounded">
+        <img width="1400" height="1050" src="img/web/11-zahradka-noc.jpg" alt="Zahrádka večer" loading="lazy" class="rounded">
       </div>
       <a href="#nahoru" class="section-top">↑ Nahoru</a>
     </section>
@@ -169,10 +193,10 @@
           <p><strong>Hospůdka u Havlů – Sokolovna Toužim</strong><br>Plzeňská 334, 364 01 Toužim</p>
           <p><strong>Telefon do hospody:</strong> <a href="tel:+420604782468">+420 604 782 468</a></p>
           <p><strong>E-mail:</strong> <a href="mailto:tomiomusic@centrum.cz">tomiomusic@centrum.cz</a></p>
-          <p>Parkování hned za budovou.</p>
+          <p>Parkování zdarma hned za budovou.</p>
           <p class="contact-buttons">
-            <a class="btn" href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebook</a>
-            <a class="btn btn-ghost-dark" href="https://mapy.com/?q=Plze%C5%88sk%C3%A1%20334%2C%20To%C5%BEim" target="_blank" rel="noopener">Navigovat</a>
+            <a class="btn" href="https://mapy.com/?q=Plze%C5%88sk%C3%A1%20334%2C%20To%C5%BEim" target="_blank" rel="noopener">Navigovat</a>
+            <a class="btn btn-ghost-dark" href="https://www.facebook.com/restaurace.sokolovna.touzim/" target="_blank" rel="noopener">Facebook</a>
           </p>
         </div>
         <iframe class="map" title="Mapa – Plzeňská 334, Toužim" loading="lazy"
@@ -183,36 +207,88 @@
   </main>
 
   <footer class="footer">
-    <img src="img/web/logo-svetle.png" alt="Logo Hospůdka u Havlů Sokolovna Toužim" width="140" height="142">
+    <img width="468" height="474" src="img/web/logo-svetle.png" alt="Logo Hospůdka u Havlů, Sokolovna Toužim">
     <p>&copy; <span id="rok"></span> Hospůdka u Havlů – Sokolovna Toužim</p>
     <p class="credit">Web vytvořil Michal Nedvídek s pomocí Claude (AI od Anthropicu)</p>
   </footer>
+
   <a href="#nahoru" class="to-top" aria-label="Zpět nahoru" title="Zpět nahoru">↑</a>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Zvětšená fotka" hidden>
+    <button class="lightbox-close" type="button" aria-label="Zavřít">×</button>
+    <img alt="">
+    <p></p>
+  </div>
+
   <script>
     document.getElementById('rok').textContent = new Date().getFullYear();
+
+    // Lišta s menu: po odrolování ztmavne, na mobilu se rozbaluje tlačítkem
+    const topbar = document.getElementById('topbar');
     const toTop = document.querySelector('.to-top');
-    const onScroll = () => toTop.classList.toggle('visible', window.scrollY > 600);
+    const menuToggle = document.querySelector('.menu-toggle');
+    const onScroll = () => {
+      topbar.classList.toggle('scrolled', window.scrollY > 40);
+      toTop.classList.toggle('visible', window.scrollY > 600);
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+    const setMenu = open => {
+      topbar.classList.toggle('menu-open', open);
+      menuToggle.setAttribute('aria-expanded', open);
+      menuToggle.textContent = open ? 'Zavřít' : 'Menu';
+    };
+    menuToggle.addEventListener('click', () => setMenu(!topbar.classList.contains('menu-open')));
+    document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => setMenu(false)));
 
-    // Zvětšení fotky z galerie: klik otevře, další klik (nebo Esc) zavře
-    const lightbox = document.createElement('div');
-    lightbox.className = 'lightbox';
-    lightbox.innerHTML = '<img alt=""><p></p>';
-    document.body.appendChild(lightbox);
+    // Dnešní otevírací doba (0 = neděle). Při změně upravit i tabulku nahoře.
+    const HODINY = { 0: ['11:00', '20:00'], 1: null, 2: null, 3: ['14:30', '22:00'], 4: ['14:30', '22:00'], 5: ['14:30', '24:00'], 6: ['11:00', '24:00'] };
+    const now = new Date();
+    const den = now.getDay();
+    const dnes = HODINY[den];
+    const minuty = t => { const [h, m] = t.split(':').map(Number); return h * 60 + m; };
+    const ted = now.getHours() * 60 + now.getMinutes();
+    const dnesEl = document.getElementById('dnes');
+    if (!dnes) {
+      dnesEl.textContent = 'Dnes máme zavřeno';
+    } else {
+      const otevreno = ted >= minuty(dnes[0]) && ted < minuty(dnes[1]);
+      dnesEl.textContent = `${dnes[0]} – ${dnes[1]}` + (otevreno ? ' · právě otevřeno' : '');
+    }
+    const radek = document.querySelector(`.hours tr[data-den="${den}"]`);
+    if (radek) { radek.classList.add('today'); radek.querySelector('th').insertAdjacentHTML('beforeend', ' <span class="today-tag">dnes</span>'); }
+
+    // Zvětšení fotky z galerie: klik (nebo Enter) otevře, další klik, křížek nebo Esc zavře
+    const lightbox = document.querySelector('.lightbox');
     const lbImg = lightbox.querySelector('img');
     const lbText = lightbox.querySelector('p');
-    const closeLightbox = () => lightbox.classList.remove('open');
+    let lastFocus = null;
+    const openLightbox = img => {
+      lastFocus = img;
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbText.textContent = img.alt;
+      lightbox.hidden = false;
+      requestAnimationFrame(() => lightbox.classList.add('open'));
+      document.body.classList.add('no-scroll');
+      lightbox.querySelector('.lightbox-close').focus();
+    };
+    const closeLightbox = () => {
+      if (lightbox.hidden) return;
+      lightbox.classList.remove('open');
+      lightbox.hidden = true;
+      document.body.classList.remove('no-scroll');
+      if (lastFocus) lastFocus.focus();
+    };
     document.querySelectorAll('.gallery img').forEach(img => {
-      img.addEventListener('click', () => {
-        lbImg.src = img.src;
-        lbImg.alt = img.alt;
-        lbText.textContent = img.alt;
-        lightbox.classList.add('open');
-      });
+      img.tabIndex = 0;
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Zvětšit fotku: ' + img.alt);
+      img.addEventListener('click', () => openLightbox(img));
+      img.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(img); } });
     });
     lightbox.addEventListener('click', closeLightbox);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeLightbox(); setMenu(false); } });
   </script>
 </body>
 </html>
