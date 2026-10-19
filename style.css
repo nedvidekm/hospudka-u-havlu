@@ -292,7 +292,12 @@ img { max-width: 100%; height: auto; display: block; }
   .menu-open .nav ul { display: flex; }
   .nav a { padding: 14px 8px; font-size: 1.15rem; border-bottom: 1px solid rgba(255, 255, 255, .1); border-radius: 0; }
 
-  .quickinfo { grid-template-columns: 1fr; margin: -32px 16px 0; }
+  .quickinfo { margin: -32px 16px 0; }
+  .quickinfo li { padding: 14px 16px; }
+}
+
+@media (max-width: 600px) {
+  .quickinfo { grid-template-columns: 1fr; }
   .quickinfo li { border-left: 0; border-top: 1px solid var(--line); padding: 14px 18px; }
   .quickinfo li:first-child { border-top: 0; }
 }
