@@ -423,7 +423,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--cream);
   border-radius: 14px;
 }
-.weekend img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; }
+.weekend img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 10px; }
 .weekend h2 { margin: 0 0 .35em; font-size: clamp(1.8rem, 4.5vw, 2.3rem); color: var(--tan); }
 .section .weekend h2 { margin: 0 0 .35em; font-size: clamp(1.8rem, 4.5vw, 2.3rem); color: var(--tan); }
 .weekend p { margin: 0 0 1em; }
@@ -443,5 +443,5 @@ img { max-width: 100%; height: auto; display: block; }
   .qi-label { flex: none; }
   .quickinfo a { text-align: right; }
   .weekend { grid-template-columns: 1fr; gap: 20px; padding: 22px 20px; margin-bottom: 40px; }
-  .weekend img { aspect-ratio: 16 / 10; object-position: center 30%; }
+  .weekend img { aspect-ratio: 4 / 3; object-position: center top; }
 }
